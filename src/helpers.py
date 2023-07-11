@@ -48,7 +48,7 @@ def load_json(json_file):
     return documents, file_path
 
 
-class StepCheckpointCallback(pl.callbacks.base.Callback):
+class StepCheckpointCallback(pl.callbacks.Callback):
     def __init__(
         self, step_interval=1000, save_name="model", save_path=".", num_saves_to_keep=5
     ):

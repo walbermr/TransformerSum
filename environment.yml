@@ -11,8 +11,9 @@ dependencies:
     - pyarrow
     - pre-commit
     - pip
+    - python==3.10
     - pip:
-      - pytorch_lightning
+      - pytorch-lightning==1.6.5
       - transformers
       - torch_optimizer
       - wandb
